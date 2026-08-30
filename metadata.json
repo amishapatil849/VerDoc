@@ -1,0 +1,6 @@
+{
+  "name": "VerDoc — AI-Powered Document Verification & Fraud Detection",
+  "description": "AI-Powered Document Verification & Fraud Detection System for Identity, Travel, and Educational Documents.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

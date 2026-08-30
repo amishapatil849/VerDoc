@@ -1,0 +1,103 @@
+import { DocumentTypeConfig } from '../types';
+
+export const DOCUMENT_TYPE_CONFIGS: DocumentTypeConfig[] = [
+  // Identity & Travel
+  {
+    id: 'passport',
+    name: 'Passport',
+    category: 'identity',
+    description: 'International travel document with biometric page and MRZ lines',
+    iconName: 'BookUser',
+    expectedFields: ['Name', 'Passport Number', 'Nationality', 'Date of Birth', 'Gender', 'Date of Issue', 'Date of Expiry', 'MRZ'],
+  },
+  {
+    id: 'visa',
+    name: 'Visa',
+    category: 'identity',
+    description: 'Entry and stay permit issued by national immigration authorities',
+    iconName: 'Stamp',
+    expectedFields: ['Visa Number', 'Name', 'Visa Type', 'Issue Date', 'Expiry Date', 'Entry Type', 'Stay Duration'],
+  },
+  {
+    id: 'national_id',
+    name: 'National ID Card',
+    category: 'identity',
+    description: 'Government issued citizen identity card or residence permit',
+    iconName: 'CreditCard',
+    expectedFields: ['ID Number', 'Full Name', 'Date of Birth', 'Gender', 'Address', 'Issue Date', 'Expiry Date'],
+  },
+  {
+    id: 'driving_license',
+    name: 'Driving License',
+    category: 'identity',
+    description: 'Motor vehicle driving authorization with category credentials',
+    iconName: 'Car',
+    expectedFields: ['License Number', 'Full Name', 'Date of Birth', 'Vehicle Categories', 'Issue Date', 'Expiry Date'],
+  },
+  {
+    id: 'permit',
+    name: 'Work / Residence Permit',
+    category: 'identity',
+    description: 'Special authorization document for residency, work, or study',
+    iconName: 'FileCheck',
+    expectedFields: ['Permit Number', 'Full Name', 'Permit Category', 'Employer/Sponsor', 'Valid From', 'Valid Until'],
+  },
+
+  // College & Educational
+  {
+    id: 'college_id',
+    name: 'College / Student ID',
+    category: 'educational',
+    description: 'Institutional student identity credential with roll/enrollment number',
+    iconName: 'GraduationCap',
+    expectedFields: ['Student Name', 'Enrollment / Roll No', 'College / University', 'Course / Program', 'Department', 'Academic Year', 'Validity'],
+  },
+  {
+    id: 'marksheet',
+    name: 'Marksheet / Academic Transcript',
+    category: 'educational',
+    description: 'Term/Semester examination score card with subject breakdown and GPA/CGPA',
+    iconName: 'FileSpreadsheet',
+    expectedFields: ['Student Name', 'Enrollment/Roll No', 'Institution', 'Course/Degree', 'Semester/Year', 'Subject Marks', 'Total Marks', 'Percentage', 'CGPA', 'Result'],
+  },
+  {
+    id: 'degree_certificate',
+    name: 'Degree Certificate',
+    category: 'educational',
+    description: 'Conferred university graduate or postgraduate degree parchment',
+    iconName: 'Award',
+    expectedFields: ['Student Name', 'Institution', 'Degree / Conferred Title', 'Certificate Number', 'Issue Date', 'Academic Year', 'Signatory Information'],
+  },
+  {
+    id: 'diploma_certificate',
+    name: 'Diploma Certificate',
+    category: 'educational',
+    description: 'Vocational or technical diploma program completion document',
+    iconName: 'ScrollText',
+    expectedFields: ['Student Name', 'Institution', 'Diploma Field', 'Certificate Number', 'Passing Year', 'Grade/Class'],
+  },
+  {
+    id: 'academic_certificate',
+    name: 'Academic Certificate',
+    category: 'educational',
+    description: 'Specialized course completion or academic honor certificate',
+    iconName: 'FileText',
+    expectedFields: ['Candidate Name', 'Issuing Body', 'Course/Achievement', 'Date of Issue', 'Verification Code'],
+  },
+  {
+    id: 'bonafide_certificate',
+    name: 'Bonafide Certificate',
+    category: 'educational',
+    description: 'Institutional certification verifying genuine active student status',
+    iconName: 'ShieldCheck',
+    expectedFields: ['Student Name', 'Roll No / ID', 'Institution', 'Current Course & Year', 'Purpose', 'Principal/Dean Signature'],
+  },
+  {
+    id: 'transfer_certificate',
+    name: 'Transfer Certificate (TC)',
+    category: 'educational',
+    description: 'School/College leaving certificate for admission transfer',
+    iconName: 'FileBadge',
+    expectedFields: ['Student Name', 'Admission No', 'Last Class Attended', 'Conduct & Character', 'Date of Leaving', 'Reason for Leaving'],
+  },
+];
